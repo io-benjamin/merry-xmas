@@ -1,9 +1,15 @@
 {
   "files": {
-    "main.js": "/merry-xmas/static/js/main.2e9cff14.js",
-    "static/js/186.51968fc9.js": "/merry-xmas/static/js/186.51968fc9.js",
+    "main.js": "/merry-xmas/static/js/main.e68d78eb.js",
+    "static/js/690.82cf0eca.js": "/merry-xmas/static/js/690.82cf0eca.js",
+    "static/media/memory2.png": "/merry-xmas/static/media/memory2.be97bb1d4697f4ab0715.png",
+    "static/media/memory1.png": "/merry-xmas/static/media/memory1.81a607dc0a0871298c1d.png",
+    "static/media/memory5.png": "/merry-xmas/static/media/memory5.c4908e02c5e89238356e.png",
     "static/media/Photos00002.jpg": "/merry-xmas/static/media/Photos00002.ad28ae03f2e76da961ff.jpg",
+    "static/media/memory6.png": "/merry-xmas/static/media/memory6.71c448ff56ef9d5f3f39.png",
+    "static/media/memory4.png": "/merry-xmas/static/media/memory4.ab78a8562b198c8e2d01.png",
     "static/media/Photos00003.jpg": "/merry-xmas/static/media/Photos00003.e6588a2703f954b51d41.jpg",
+    "static/media/memory3.png": "/merry-xmas/static/media/memory3.ba56ef83e4999236050c.png",
     "static/media/Val00002.jpg": "/merry-xmas/static/media/Val00002.9464ade95c5b0ce3dd06.jpg",
     "static/media/Photos00007.jpg": "/merry-xmas/static/media/Photos00007.8a2f69e8b83cc391fe98.jpg",
     "static/media/8.jpg": "/merry-xmas/static/media/8.d45963758546a24b8643.jpg",
@@ -51,11 +57,11 @@
     "favicon-16.png": "/merry-xmas/favicon-16.png",
     "serve.json": "/merry-xmas/serve.json",
     "manifest.json": "/merry-xmas/manifest.json",
-    "main.2e9cff14.js.map": "/merry-xmas/static/js/main.2e9cff14.js.map",
-    "186.51968fc9.js.map": "/merry-xmas/static/js/186.51968fc9.js.map"
+    "main.e68d78eb.js.map": "/merry-xmas/static/js/main.e68d78eb.js.map",
+    "690.82cf0eca.js.map": "/merry-xmas/static/js/690.82cf0eca.js.map"
   },
   "entrypoints": [
-    "static/js/186.51968fc9.js",
-    "static/js/main.2e9cff14.js"
+    "static/js/690.82cf0eca.js",
+    "static/js/main.e68d78eb.js"
   ]
 }
