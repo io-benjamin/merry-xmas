@@ -1,8 +1,7 @@
 import React from 'react';
-import { View, Image, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
-import ConfettiCannon from 'react-native-confetti-cannon';
+import { View, Image, Text, StyleSheet, ScrollView } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { NavigationButtons } from './pages'; // Importing NavigationButtons component
+import { NavigationButtons } from './pages'; 
 import FallingOrnaments from './FallingOrnaments';
 
 
@@ -11,7 +10,6 @@ const Christmas2024 = ({ navigation }) => {
     require('./assets/Yearly-Christmas-photos/Photos00001.jpg'),
     require('./assets/Yearly-Christmas-photos/Photos00002.jpg'),
     require('./assets/Yearly-Christmas-photos/Photos00003.jpg'),
-    require('./assets/Yearly-Christmas-photos/Photos00004.jpg'),
     require('./assets/Yearly-Christmas-photos/Photos00005.jpg'),
     require('./assets/Yearly-Christmas-photos/Photos00006.jpg'),
     require('./assets/Yearly-Christmas-photos/Photos00007.jpg'),
@@ -99,11 +97,6 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     fontFamily: 'cursive',
     color: '#333',
-  },
-  garlandImage: {
-    width: 300,
-    height: 150, 
-    marginBottom: 20,
   },
   imageContainer: {
     flexDirection: 'row',

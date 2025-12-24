@@ -3,8 +3,11 @@ import { View, Image, Text, StyleSheet, ScrollView } from 'react-native';
 import ConfettiCannon from 'react-native-confetti-cannon';
 import { NavigationButtons } from './pages'; // Importing NavigationButtons component
 
-const GraduationPage = ({ navigation }) => {
-  const imageSources = [
+// Configuration for graduation memories - easy to update and add new memories!
+const GRADUATION_CONFIG = {
+  title: 'Happy Graduation Kimmy❤️',
+  headerImage: require('./assets/graduation-photos/image.png'),
+  images: [
     require('./assets/graduation-photos/1.jpg'), 
     require('./assets/graduation-photos/2.jpg'),
     require('./assets/graduation-photos/3.jpg'),
@@ -13,7 +16,18 @@ const GraduationPage = ({ navigation }) => {
     require('./assets/graduation-photos/6.jpg'),
     require('./assets/graduation-photos/7.jpg'),
     require('./assets/graduation-photos/8.jpg'),
-  ];
+    // Add more photos here easily!
+  ],
+  messages: [
+    {
+      text: "05/10/2024, CONGRATULATIONS to my beautiful girl, you've never failed to impress me. I have always knew you would be destined to do great things and I am nothing less than proud that you do. I thank you for constantly pushing me to do great things and become a better person, I might not say it but you know you are the reason I work so hard. I push myself because you have built me up and told me my worth and I thank you for that. This achievement for you is nothing less than I expected, you are smart, beautiful, kind, and will do great things in our future. Keep your head up and keep pushing for success, and know i'll be there rooting for you the entire time. I wish you the best of luck and know you don't need it. I know you can do this, sure there might be some hiccups but don't give up on yourself. I am proud of you and know everyone around you is rooting for you. I love you, you are a defintion of success."
+    },
+    // Add more messages here easily!
+  ]
+};
+
+const GraduationPage = ({ navigation }) => {
+  const { title, headerImage, images, messages } = GRADUATION_CONFIG;
 
   return (
     <>
@@ -21,8 +35,8 @@ const GraduationPage = ({ navigation }) => {
         {/* Main container */}
         <View style={styles.backgroundContainer}>
           <ScrollView contentContainerStyle={styles.scrollContainer}>
-            <Image source={require('./assets/graduation-photos/image.png')} style={styles.garlandImage} />
-            <Text style={styles.heading}>Happy Graduation Kimmy❤️</Text>
+            <Image source={headerImage} style={styles.garlandImage} />
+            <Text style={styles.heading}>{title}</Text>
 
             {/* Confetti */}
             <View style={styles.confettiContainer}>
@@ -31,7 +45,7 @@ const GraduationPage = ({ navigation }) => {
 
             {/* Images */}
             <View style={styles.imageContainer}>
-              {imageSources.map((image, index) => (
+              {images.map((image, index) => (
                 <Image
                   key={index.toString()}
                   source={image}
@@ -41,15 +55,12 @@ const GraduationPage = ({ navigation }) => {
               ))}
             </View>
 
-            {/* Text containers */}
-            <View style={styles.textContainer}>
-              <Text style={styles.text}>
-                05/10/2024, CONGRATULATIONS to my beautiful girl, you've never failed to impress me. I have always knew you would be destined to do great things and I am nothing less than proud that you do. 
-                I thank you for constantly pushing me to do great things and become a better person, I might not say it but you know you are the reason I work so hard. I push myself because you have built me up and told me my worth and I thank you for that. 
-                This achievement for you is nothing less than I expected, you are smart, beautiful, kind, and will do great things in our future. Keep your head up and keep pushing for success, and know i'll be there rooting for you the entire time. 
-                I wish you the best of luck and know you don't need it. I know you can do this, sure there might be some hiccups but don't give up on yourself. I am proud of you and know everyone around you is rooting for you. I love you, you are a defintion of success.
-              </Text>
-            </View>
+            {/* Text containers - now supports multiple messages */}
+            {messages.map((message, index) => (
+              <View key={index.toString()} style={styles.textContainer}>
+                <Text style={styles.text}>{message.text}</Text>
+              </View>
+            ))}
           </ScrollView>
         </View>
       </View>

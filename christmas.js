@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, Image, Text, StyleSheet, TouchableOpacity, ScrollView, Animated, Dimensions } from 'react-native';
-import Snow from 'react-native-snow';
+import SnowEffect from './SnowEffect';
 import { NavigationButtons } from './pages'; // Importing NavigationButtons component
 
 const ChristmasPage = ({ navigation }) => {
@@ -28,7 +28,7 @@ const ChristmasPage = ({ navigation }) => {
 
         {/* Snowfall container */}
         <View style={styles.snowContainer}>
-          <Snow fullScreen={true} snowflakesCount={10000} fallSpeed="fast" />
+          <SnowEffect snowflakesCount={100} />
         </View>
 
         {/* Images */}

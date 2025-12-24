@@ -1,9 +1,9 @@
 // FallingOrnaments.js
 import React, { useRef, useEffect } from 'react';
-import { View, Animated, StyleSheet, Dimensions, Image } from 'react-native';
+import { View, Animated, StyleSheet, Dimensions } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
-const ORNAMENT_COUNT = 12;
+const ORNAMENT_COUNT = 6;
 const ornaments = [
   require('./assets/Yearly-Christmas-photos/ornament1.png'),
   require('./assets/Yearly-Christmas-photos/ornament2.png'),
@@ -20,13 +20,13 @@ export default function FallingOrnaments() {
         Animated.sequence([
           Animated.timing(anim, {
             toValue: height,
-            duration: 5000 + Math.random() * 3000,
-            useNativeDriver: true,
+            duration: 1500 + Math.random() * 1500,
+            useNativeDriver: false,
           }),
           Animated.timing(anim, {
             toValue: 0,
-            duration: 0,
-            useNativeDriver: true,
+            duration: 20,
+            useNativeDriver: false,
           }),
         ])
       ).start();
