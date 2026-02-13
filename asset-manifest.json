@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/merry-xmas/static/js/main.e68d78eb.js",
-    "static/js/690.82cf0eca.js": "/merry-xmas/static/js/690.82cf0eca.js",
+    "main.js": "/merry-xmas/static/js/main.5c44bb58.js",
+    "static/js/690.a4099715.js": "/merry-xmas/static/js/690.a4099715.js",
     "static/media/memory2.png": "/merry-xmas/static/media/memory2.be97bb1d4697f4ab0715.png",
     "static/media/memory1.png": "/merry-xmas/static/media/memory1.81a607dc0a0871298c1d.png",
     "static/media/memory5.png": "/merry-xmas/static/media/memory5.c4908e02c5e89238356e.png",
@@ -57,11 +57,11 @@
     "favicon-16.png": "/merry-xmas/favicon-16.png",
     "serve.json": "/merry-xmas/serve.json",
     "manifest.json": "/merry-xmas/manifest.json",
-    "main.e68d78eb.js.map": "/merry-xmas/static/js/main.e68d78eb.js.map",
-    "690.82cf0eca.js.map": "/merry-xmas/static/js/690.82cf0eca.js.map"
+    "main.5c44bb58.js.map": "/merry-xmas/static/js/main.5c44bb58.js.map",
+    "690.a4099715.js.map": "/merry-xmas/static/js/690.a4099715.js.map"
   },
   "entrypoints": [
-    "static/js/690.82cf0eca.js",
-    "static/js/main.e68d78eb.js"
+    "static/js/690.a4099715.js",
+    "static/js/main.5c44bb58.js"
   ]
 }
